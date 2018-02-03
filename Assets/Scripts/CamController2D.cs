@@ -5,7 +5,6 @@ using UnityEngine;
 public class CamController2D : MonoBehaviour {
 
 	GameObject player;
-	Camera cam;
 	public Vector2 focusAreaFollowOffset;
 	public Vector2 focusAreaSize;
 	public float smoothX;
@@ -47,7 +46,6 @@ public class CamController2D : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
-		cam = GetComponent<Camera> ();
 		focusArea = new FocusArea (player.GetComponent<Collider>().bounds,focusAreaSize);
 	}
 	// Update is called once per frame

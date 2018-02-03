@@ -101,7 +101,7 @@ public class ActionTouchReiceiver : Singleton<ActionTouchReiceiver> {
 		}
 	}
 	void OnDrawGizmos(){
-		playerTrans = PlayerActionManager.Instance.transform;
+		playerTrans = GameObject.FindGameObjectWithTag ("Player").transform;
 		Color c = Color.cyan;
 		c.a = 0.1f;
 		Gizmos.color = c;
