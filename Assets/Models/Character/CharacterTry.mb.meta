@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: b586e9e1d9b1b4dde82ffba7a096b126
+timeCreated: 1516185973
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: BODY
+    100002: BUTT
+    100004: BUTT 1
+    100006: //RootNode
+    100008: group
+    100010: group1
+    100012: group10
+    100014: group11
+    100016: group12
+    100018: group2
+    100020: group3
+    100022: group4
+    100024: group5
+    100026: group6
+    100028: group7
+    100030: group8
+    100032: group9
+    100034: group9_pasted__pSphere1
+    100036: HEAD
+    100038: HEAD 1
+    100040: L_BOOB
+    100042: L_BOOB 1
+    100044: L_L_ARM
+    100046: L_L_LEG
+    100048: L_U_ARM
+    100050: L_U_LEG
+    100052: left
+    100054: NECK
+    100056: pasted__group
+    100058: pasted__group1
+    100060: pasted__group1 1
+    100062: pasted__group1 2
+    100064: pasted__group1 3
+    100066: pasted__group11
+    100068: pasted__group7
+    100070: pasted__group9
+    100072: pasted__group9 1
+    100074: pasted__pasted__group1
+    100076: pasted__pasted__group9
+    100078: pasted__pasted__pasted__pSphere1
+    100080: pasted__pasted__pSphere1
+    100082: pasted__pasted__pSphere1 1
+    100084: pasted__pasted__pSphere1 2
+    100086: pasted__pasted__R_U_ARM
+    100088: pasted__pSphere1
+    100090: pasted__pSphere1 1
+    100092: pasted__pSphere1 2
+    100094: pasted__R_L_ARM
+    100096: pasted__R_L_LEG
+    100098: pasted__R_U_ARM
+    100100: pasted__R_U_LEG
+    100102: pSphere1
+    100104: R_BOOB
+    100106: transform1
+    100108: transform10
+    100110: transform11
+    100112: transform12
+    100114: transform13
+    100116: transform14
+    100118: transform15
+    100120: transform16
+    100122: transform17
+    100124: transform18
+    100126: transform19
+    100128: transform2
+    100130: transform20
+    100132: transform21
+    100134: transform22
+    100136: transform23
+    100138: transform24
+    100140: transform25
+    100142: transform26
+    100144: transform3
+    100146: transform4
+    100148: transform5
+    100150: transform6
+    100152: transform7
+    100154: transform8
+    100156: transform9
+    400000: BODY
+    400002: BUTT
+    400004: BUTT 1
+    400006: //RootNode
+    400008: group
+    400010: group1
+    400012: group10
+    400014: group11
+    400016: group12
+    400018: group2
+    400020: group3
+    400022: group4
+    400024: group5
+    400026: group6
+    400028: group7
+    400030: group8
+    400032: group9
+    400034: group9_pasted__pSphere1
+    400036: HEAD
+    400038: HEAD 1
+    400040: L_BOOB
+    400042: L_BOOB 1
+    400044: L_L_ARM
+    400046: L_L_LEG
+    400048: L_U_ARM
+    400050: L_U_LEG
+    400052: left
+    400054: NECK
+    400056: pasted__group
+    400058: pasted__group1
+    400060: pasted__group1 1
+    400062: pasted__group1 2
+    400064: pasted__group1 3
+    400066: pasted__group11
+    400068: pasted__group7
+    400070: pasted__group9
+    400072: pasted__group9 1
+    400074: pasted__pasted__group1
+    400076: pasted__pasted__group9
+    400078: pasted__pasted__pasted__pSphere1
+    400080: pasted__pasted__pSphere1
+    400082: pasted__pasted__pSphere1 1
+    400084: pasted__pasted__pSphere1 2
+    400086: pasted__pasted__R_U_ARM
+    400088: pasted__pSphere1
+    400090: pasted__pSphere1 1
+    400092: pasted__pSphere1 2
+    400094: pasted__R_L_ARM
+    400096: pasted__R_L_LEG
+    400098: pasted__R_U_ARM
+    400100: pasted__R_U_LEG
+    400102: pSphere1
+    400104: R_BOOB
+    400106: transform1
+    400108: transform10
+    400110: transform11
+    400112: transform12
+    400114: transform13
+    400116: transform14
+    400118: transform15
+    400120: transform16
+    400122: transform17
+    400124: transform18
+    400126: transform19
+    400128: transform2
+    400130: transform20
+    400132: transform21
+    400134: transform22
+    400136: transform23
+    400138: transform24
+    400140: transform25
+    400142: transform26
+    400144: transform3
+    400146: transform4
+    400148: transform5
+    400150: transform6
+    400152: transform7
+    400154: transform8
+    400156: transform9
+    2000000: left
+    2300000: group9_pasted__pSphere1
+    3300000: group9_pasted__pSphere1
+    4300000: group9_pasted__pSphere1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

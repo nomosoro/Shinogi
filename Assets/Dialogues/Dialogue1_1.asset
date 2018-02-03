@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf19ce05383b492eb063d60d527ae01, type: 3}
+  m_Name: Dialogue1_1
+  m_EditorClassIdentifier: 
+  SetName: Rei starts her escorting journey.
+  dialogues:
+  - speaker: Rei
+    text: Combat suit ready, radar ready, anti-radiation ready, life sustaining ready...
+  - speaker: Rei
+    text: 'How long since the first escorting though, I cant even remember. Maybe
+      5 or 6 years ago? '
+  - speaker: Rei
+    text: 'Pfff. Let''s focus on the work first. Wish me luck today as well. '
+  - speaker: ???
+    text: '......(buzzling sound)'
+  - speaker: Rei
+    text: '...DId I just blacked out for a sec?'
+  - speaker: Rei
+    text: Nevermind. I have not much time.
+  - speaker: Rei
+    text: Dialogue 1 testing
+  - speaker: Rei
+    text: Dialogue 2 testing
+  - speaker: Rei
+    text: Dialogue 3 testing
+  - speaker: Rei
+    text: Dialogue 4 testing
