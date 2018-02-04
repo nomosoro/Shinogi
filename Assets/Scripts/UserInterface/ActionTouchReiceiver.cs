@@ -16,13 +16,14 @@ public class ActionTouchReiceiver : Singleton<ActionTouchReiceiver> {
 	public static event OnMeleeChargeActionBeganActions OnMeleeChargeActionBegan;
 	public static event OnShootActions OnShoot;
 	public static event OnLaunchModeStartActions OnLaunchModeStart;
-	public static event  OnLaunchActions OnLaunch;
+	public static event  OnLaunchActions OnLaunch; 
 	public float holdThreshold = 0.2f;
 	public float meleeRange = 10f;
 	private PlayerActionManager playerActionManager;
 	private Transform playerTrans;
 
-	private Vector3 primaryPoint;
+	private Vector3 _primaryPoint;
+	public Vector3 PrimaryPoint {get;set;}
 	private bool isMeele = false;
 	private bool isHolding = false;
 	void Start () {
@@ -34,16 +35,16 @@ public class ActionTouchReiceiver : Singleton<ActionTouchReiceiver> {
 		
 	}
 	void OnTouchMoved(Vector3 point){
-		primaryPoint = point;
+		_primaryPoint = point;
 		if (isMeele && isHolding) {
 			
 		}
 	}
 	void OnTouchStay(Vector3 point){
-		primaryPoint = point;
+		_primaryPoint = point;
 	}
 	void OnTouchDown(Vector3 point){
-		primaryPoint = point;
+		_primaryPoint = point;
 		isMeele = PointIsInMeleeRange (point);
 		StartCoroutine ("COCallingHoldMode");
 	}
@@ -94,9 +95,9 @@ public class ActionTouchReiceiver : Singleton<ActionTouchReiceiver> {
 			}
 		} else {
 			if (isHolding) {
-				OnLaunch (primaryPoint);
+				OnLaunch (_primaryPoint);
 			} else {
-				OnShoot (primaryPoint);
+				OnShoot (_primaryPoint);
 			}
 		}
 	}

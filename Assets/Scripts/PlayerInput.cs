@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Utilities;
 public class PlayerInput : Singleton<PlayerInput> {
-	
-
 	public KeyCode moveForwardKey;
 	public KeyCode moveBackwardKey;
 	public KeyCode moveLeftKey;
