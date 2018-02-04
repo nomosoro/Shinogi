@@ -8,14 +8,12 @@ public class MeleePanelController : MonoBehaviour {
 	Camera cam;
 	// Use this for initialization
 	void Start () {
-		
+		cam = Camera.main;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		Ray camToTouchRay = new Ray(cam.transform.position,ActionTouchReiceiver.Instance.PrimaryPoint);
 		Plane plane = new Plane ();
-
 	}
-
 }
