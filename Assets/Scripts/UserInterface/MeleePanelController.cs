@@ -10,10 +10,19 @@ public class MeleePanelController : MonoBehaviour {
 	void Start () {
 		cam = Camera.main;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		Ray camToTouchRay = new Ray(cam.transform.position,ActionTouchReiceiver.Instance.PrimaryPoint);
-		Plane plane = new Plane ();
+		Plane plane = new Plane (transform.forward,transform.position);
+		float enterDis;
+		if (plane.Raycast (TouchManager.Instance.PrimaryRay, out enterDis)) {
+			Vector3 worldPoint = TouchManager.Instance.PrimaryRay.GetPoint (enterDis);
+			PointIndicator.transform.position = worldPoint;
+		}
+		Debug.Log (ActionTouchReiceiver.Instance.WorldPoint);
 	}
+
+	void OnGizmosDraw(){
+		Gizmos.color = Color.red;
+	}
+	
 }

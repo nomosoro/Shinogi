@@ -82,7 +82,18 @@ public abstract class EnemyController : MonoBehaviour {
 	}
 	void OnExplosion(ExplosionData ed){
 		Debug.Log ("exploded! Explosion Info : force - " + ed.force + " ; Position - " + ed.position + " ; Radius - " + ed.radius + " ;");
+		enemyMotor.Disabled = true;
 		GetComponent<Rigidbody> ().AddExplosionForce (ed.force,ed.position,ed.radius);
+		StopCoroutine ("COReactivateMotor");
+		StartCoroutine ("COReactivateMotor",1f);
+	}
+	IEnumerator COReactivateMotor(float reactivateMinimalVelocity){
+		while(enemyMotor.Disabled ==true ){
+			if (GetComponent<Rigidbody> ().velocity.magnitude<reactivateMinimalVelocity) {
+				enemyMotor.Disabled = false;
+			}
+			yield return null;
+		}
 	}
 	void Die(){
 		Destroy (gameObject);

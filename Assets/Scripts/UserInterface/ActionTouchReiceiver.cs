@@ -22,8 +22,15 @@ public class ActionTouchReiceiver : Singleton<ActionTouchReiceiver> {
 	private PlayerActionManager playerActionManager;
 	private Transform playerTrans;
 
-	private Vector3 _primaryPoint;
-	public Vector3 PrimaryPoint {get;set;}
+	private Vector3 _worldPoint;
+	public Vector3 WorldPoint {
+		get{
+			return _worldPoint;
+		}
+		set{ 
+			_worldPoint = value;
+		}
+	}
 	private bool isMeele = false;
 	private bool isHolding = false;
 	void Start () {
@@ -35,28 +42,28 @@ public class ActionTouchReiceiver : Singleton<ActionTouchReiceiver> {
 		
 	}
 	void OnTouchMoved(Vector3 point){
-		_primaryPoint = point;
+		_worldPoint = point;
 		if (isMeele && isHolding) {
 			
 		}
 	}
 	void OnTouchStay(Vector3 point){
-		_primaryPoint = point;
+		_worldPoint = point;
 	}
 	void OnTouchDown(Vector3 point){
-		_primaryPoint = point;
+		_worldPoint = point;
 		isMeele = PointIsInMeleeRange (point);
 		StartCoroutine ("COCallingHoldMode");
 	}
 	void OnTouchExit(Vector3 point){
-		isHolding = false;
 		StopCoroutine ("COCallingHoldMode");
 		ExecuteAction (point);
+		isHolding = false;
 	}
 	void OnTouchUp(Vector3 point){
-		isHolding = false;
 		StopCoroutine ("COCallingHoldMode");
 		ExecuteAction (point);
+		isHolding = false;
 	}
 
 	bool PointIsInMeleeRange(Vector3 point){
@@ -71,7 +78,7 @@ public class ActionTouchReiceiver : Singleton<ActionTouchReiceiver> {
 			yield return null;
 		}
 		isHolding = true;
-		Debug.Log ("Here");
+		Debug.Log ("Charging Tap detected, and the values are : isHoding - " + isHolding + " ; isMelee = " + isMeele + " ;");
 		if (isMeele) {
 			if(OnMeleeChargeModeStart!=null){
 				OnMeleeChargeModeStart ();
@@ -83,6 +90,8 @@ public class ActionTouchReiceiver : Singleton<ActionTouchReiceiver> {
 		}
 	}
 	void ExecuteAction(Vector3 touchExitPoint){
+
+		Debug.Log ("Executing action, and the values are : isHoding - " + isHolding + " ; isMelee = " + isMeele + " ;");
 		if (isMeele) {
 			if (isHolding) {
 				if (OnMeleeChargeActionBegan != null) {
@@ -95,9 +104,9 @@ public class ActionTouchReiceiver : Singleton<ActionTouchReiceiver> {
 			}
 		} else {
 			if (isHolding) {
-				OnLaunch (_primaryPoint);
+				OnLaunch (_worldPoint);
 			} else {
-				OnShoot (_primaryPoint);
+				OnShoot (_worldPoint);
 			}
 		}
 	}

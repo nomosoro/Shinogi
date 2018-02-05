@@ -34,6 +34,15 @@ public class Motor : MonoBehaviour {
 	}
 	public RaycastHit GroundHitInfo{ get; set;}
 
+	private bool disabled = false;
+	public bool Disabled  {
+		get{
+			return disabled;
+		} 
+		set {
+			disabled = value;
+		}
+	}
 	private bool isGrounded = false;
 	private float distToGround;
 	private Collider collider;
@@ -47,6 +56,9 @@ public class Motor : MonoBehaviour {
 		distToGround = collider.bounds.extents.y;
 	}
 	void Update () {
+		if (disabled) {
+			return;
+		}
 		if (MoveDir != Vector3.zero && !IsLookingAt) {
 			TurnTo (MoveDir);
 		}
@@ -107,6 +119,7 @@ public class Motor : MonoBehaviour {
 	public void UnFreeze(){
 		IsFreezed = false;
 	}
+
 
 	public void TurnTo(Vector3 direction){
 		direction.y = 0;

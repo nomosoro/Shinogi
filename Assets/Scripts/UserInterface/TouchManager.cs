@@ -16,7 +16,7 @@ public class TouchManager : Singleton<TouchManager> {
 		camera = Camera.main;
 	}
 
-	Ray ray;
+	public Ray PrimaryRay;
 	void FixedUpdate () {
 		bool isHit;
 		if (Input.touches.Length > 0) {
@@ -24,8 +24,8 @@ public class TouchManager : Singleton<TouchManager> {
 			touchList.CopyTo (touchesOld);
 			touchList.Clear ();
 			foreach (Touch touch in Input.touches) {
-				ray = camera.ScreenPointToRay (touch.position);
-				isHit = Physics.Raycast (ray, out hit, 1000f, touchReceivingLayer);
+				PrimaryRay = camera.ScreenPointToRay (touch.position);
+				isHit = Physics.Raycast (PrimaryRay, out hit, 1000f, touchReceivingLayer);
 				//Debug.Log (isHit);
 				if(isHit){
 					GameObject recipient = hit.transform.gameObject;
@@ -65,7 +65,7 @@ public class TouchManager : Singleton<TouchManager> {
 	}
 	void OnDrawGizmos(){
 		Gizmos.color = Color.green;
-		Gizmos.DrawLine (ray.origin,ray.origin+ray.direction*10000f);
+		Gizmos.DrawLine (PrimaryRay.origin,PrimaryRay.origin+PrimaryRay.direction*10000f);
 	}
 }
 

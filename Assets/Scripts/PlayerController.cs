@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
 	Motor playerMotor;
 	ShootModule gunFireModule;       
 	ShootModule grenedeModule;
+	Animator animator;
 	public enum ControllerMode{
 		Surface,
 		TwoD,
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour {
 	public ControllerMode controllerMode;
 	// Use this for initialization
 	void Start () {
+		animator = GetComponent<Animator> ();
 		playerMotor = GetComponent<Motor> ();
 		gunFireModule = GetComponents<ShootModule> ()[0];
 		grenedeModule = GetComponents<ShootModule> () [1];
@@ -66,16 +68,18 @@ public class PlayerController : MonoBehaviour {
 		gunFireModule.Fire ();
 	}
 	public void LaunchTowards(Vector3 dir){
+		Debug.Log ("LaunchTowards executing, dir is " + dir);
 		grenedeModule.Direction = dir;
 		grenedeModule.Fire ();
 	}
 	public void LaunchAt(Vector3 point){
+		Debug.Log ("LaunchAt executing, point is " + point);
 		grenedeModule.Direction = (point-(transform.position+gunFireModule.Origin)).normalized;
 		grenedeModule.Fire ();
 	}
 	public void MeleeAttack(Vector3 point){
 		Debug.Log ("OnMeleeAttack");
-
+		animator.SetTrigger ("OnAttack");
 	}
 	void Die(){
 		
