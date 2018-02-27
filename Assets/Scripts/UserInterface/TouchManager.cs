@@ -24,6 +24,7 @@ public class TouchManager : Singleton<TouchManager> {
 			touchList.CopyTo (touchesOld);
 			touchList.Clear ();
 			foreach (Touch touch in Input.touches) {
+				
 				PrimaryRay = camera.ScreenPointToRay (touch.position);
 				isHit = Physics.Raycast (PrimaryRay, out hit, 1000f, touchReceivingLayer);
 				//Debug.Log (isHit);
@@ -31,7 +32,6 @@ public class TouchManager : Singleton<TouchManager> {
 					GameObject recipient = hit.transform.gameObject;
 
 					if (touch.phase == TouchPhase.Began) {
-
 						touchList.Add (hit.transform.gameObject);
 						recipient.SendMessage ("OnTouchDown", hit.point, SendMessageOptions.DontRequireReceiver);
 					}

@@ -27,6 +27,7 @@ public class PlayerActionManager : Singleton<PlayerActionManager> {
 		playerController.MeleeAttack (attackDirection);
 	}
 	void ExecuteMeleeChargeAction(){
+		Debug.Log(MeleePanelController.Instance.PointingDirection);
 		UIManager.Instance.HideMeleeChargePanel ();
 	}
 	void StartMeleeChargeMode(){

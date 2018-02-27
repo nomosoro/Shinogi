@@ -58,12 +58,10 @@ public class ActionTouchReiceiver : Singleton<ActionTouchReiceiver> {
 	void OnTouchExit(Vector3 point){
 		StopCoroutine ("COCallingHoldMode");
 		ExecuteAction (point);
-		isHolding = false;
 	}
 	void OnTouchUp(Vector3 point){
 		StopCoroutine ("COCallingHoldMode");
 		ExecuteAction (point);
-		isHolding = false;
 	}
 
 	bool PointIsInMeleeRange(Vector3 point){
@@ -90,8 +88,7 @@ public class ActionTouchReiceiver : Singleton<ActionTouchReiceiver> {
 		}
 	}
 	void ExecuteAction(Vector3 touchExitPoint){
-
-		Debug.Log ("Executing action, and the values are : isHoding - " + isHolding + " ; isMelee = " + isMeele + " ;");
+		Debug.Log ("Executing action, and the values are : isHoding = " + isHolding + " ; isMelee = " + isMeele + " ;");
 		if (isMeele) {
 			if (isHolding) {
 				if (OnMeleeChargeActionBegan != null) {

@@ -11,6 +11,9 @@ public class DialogueController : MonoBehaviour {
 	public delegate void DialogueFinishedAction();
 	public event DialogueFinishedAction OnDialogueFinished;
 	public bool dialogueFinished { get; set;}
+
+	public delegate void OnCurrentDialogueTouchedAction();
+	public event OnCurrentDialogueTouchedAction OnCurrentDialogueTouched;
 	// Use this for initialization
 	void Awake(){
 		DialogueManager.Instance.RegisterSpeaker (dialogueSpeakerName,this);
@@ -82,5 +85,9 @@ public class DialogueController : MonoBehaviour {
 			dialogueText.color = textColor;
 			yield return null;
 		}
+	}
+
+	void OnTouchDown(Vector3 point){
+		OnCurrentDialogueTouched ();
 	}
 }

@@ -15,23 +15,27 @@ public class MoveRightButton : MonoBehaviour {
 	}
 	void OnTouchMoved(){
 		UnfadeButton ();
-		PlayerInput.Instance.MoveHorizontal = 1;
+		SetPlayerMoveHorizontal (1);
 	}
 	void OnTouchStay(){
 		UnfadeButton ();
-		PlayerInput.Instance.MoveHorizontal = 1;
+		SetPlayerMoveHorizontal (1);
 	}
 	void OnTouchDown(){
 		UnfadeButton ();
-		PlayerInput.Instance.MoveHorizontal = 1;
+		SetPlayerMoveHorizontal (1);
 	}
 	void OnTouchExit(){
 		FadeButton ();
-		PlayerInput.Instance.MoveHorizontal = 0;
+		SetPlayerMoveHorizontal (0);
 	}
 	void OnTouchUp(){
 		FadeButton ();
-		PlayerInput.Instance.MoveHorizontal = 0;
+		SetPlayerMoveHorizontal (0);
+	}
+
+	public void SetPlayerMoveHorizontal(int value){
+		PlayerInput.Instance.MoveHorizontal = value;
 	}
 	void FadeButton(){
 		Color c = sr.color;

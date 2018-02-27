@@ -5,15 +5,19 @@ using Utilities;
 
 public class DialogueManager : Singleton<DialogueManager> {
 	//Incharge of all the dialogue to be played.
+
 	public DialogueList dialogueList;
 	private Hashtable controllerTable=new Hashtable ();
 	private string anchoredSpeakerName;
 	private DialogueController anchoredController;
 	private int dialogueIndex = 0;
+
+
 	void Awake () {
 	}
 	void Start(){
 		PlayDialogueList ();
+
 	}
 	public void RegisterSpeaker(string speakerName,DialogueController dc){
 		controllerTable.Add (speakerName,dc);
@@ -23,13 +27,14 @@ public class DialogueManager : Singleton<DialogueManager> {
 	}
 	// Update is called once per frame
 	void Update () {
-		if (PlayerInput.Instance.clickDown) {
-			if (anchoredController != null) {
-				if (!anchoredController.dialogueFinished) {
-					anchoredController.ForwindDialogue ();
-				} else {
-					NextDialogue ();
-				}
+		
+	}
+	void OnNextDialogue(){
+		if (anchoredController != null) {
+			if (!anchoredController.dialogueFinished) {
+				anchoredController.ForwindDialogue ();
+			} else {
+				NextDialogue ();
 			}
 		}
 	}
@@ -38,6 +43,8 @@ public class DialogueManager : Singleton<DialogueManager> {
 		anchoredSpeakerName = dialogueList.dialogues [0].speaker;
 		anchoredController = (DialogueController)controllerTable[anchoredSpeakerName];
 		anchoredController.dialogue = dialogueList.dialogues[0];
+		anchoredController.OnCurrentDialogueTouched -= NextDialogue;
+		anchoredController.OnCurrentDialogueTouched += NextDialogue;
 		anchoredController.ShowDialoguePanel ();
 		anchoredController.Play ();
 	}
