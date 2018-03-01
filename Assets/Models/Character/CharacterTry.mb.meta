@@ -184,7 +184,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -222,8 +222,435 @@ ModelImporter:
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
-    human: []
-    skeleton: []
+    human:
+    - boneName: group2
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pasted__group
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pasted__pasted__group1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: transform15
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: CharacterTry(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BUTT
+      parentName: CharacterTry(Clone)
+      position: {x: 0.0007658601, y: 3.5419333, z: -0.0032113492}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform6
+      parentName: BUTT
+      position: {x: -0.0007658601, y: -3.5419333, z: 0.0032113492}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group
+      parentName: CharacterTry(Clone)
+      position: {x: 1.7024044, y: 3.81266, z: -0.26832643}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group1
+      parentName: group
+      position: {x: 0.0050823777, y: -3.81266, z: 0.26832643}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__R_U_ARM
+      parentName: pasted__group1
+      position: {x: -1.0058076, y: 3.8525195, z: -0.26223853}
+      rotation: {x: -0.30867434, y: 0.94922024, z: 0.044727184, w: -0.041238923}
+      scale: {x: 0.26628774, y: 0.7102559, z: -0.32389808}
+    - name: transform10
+      parentName: pasted__R_U_ARM
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group1
+      parentName: CharacterTry(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BODY
+      parentName: group1
+      position: {x: -0.0139097115, y: 3.9494019, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9803941, y: 0.9803941, z: 0.9803941}
+    - name: transform1
+      parentName: BODY
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BUTT 1
+      parentName: group1
+      position: {x: -0.011738824, y: 3.1372316, z: -0.049012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 0.8591062}
+    - name: transform5
+      parentName: BUTT 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HEAD 1
+      parentName: group1
+      position: {x: -0.024906162, y: 4.902171, z: -0.02915559}
+      rotation: {x: -0.27224135, y: -0.018682089, z: -0.0011884925, w: 0.96204686}
+      scale: {x: 0.30587023, y: 0.40220705, z: 0.33967656}
+    - name: transform8
+      parentName: HEAD 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_BOOB 1
+      parentName: group1
+      position: {x: -0.19248438, y: 3.9921675, z: 0.29093543}
+      rotation: {x: 0, y: -0.38060996, z: -0, w: 0.92473567}
+      scale: {x: 0.18892898, y: 0.18892898, z: 0.18892898}
+    - name: transform3
+      parentName: L_BOOB 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_L_ARM
+      parentName: group1
+      position: {x: -1.0471282, y: 3.029228, z: -0.2691847}
+      rotation: {x: -0.14846005, y: -0.6649167, z: -0.14620881, w: 0.7172646}
+      scale: {x: 0.19972154, y: 0.6781094, z: 0.28128985}
+    - name: transform9
+      parentName: L_L_ARM
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_L_LEG
+      parentName: group1
+      position: {x: -0.72487795, y: 0.6917771, z: -0.17487568}
+      rotation: {x: 0.0076442757, y: -0.0046524093, z: -0.09915741, w: 0.99503154}
+      scale: {x: 0.34771842, y: 1.1284862, z: 0.46811283}
+    - name: transform11
+      parentName: L_L_LEG
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_U_ARM
+      parentName: group1
+      position: {x: -0.714653, y: 3.8525195, z: -0.26223853}
+      rotation: {x: 0.051647812, y: 0.008762138, z: -0.32732382, w: 0.943459}
+      scale: {x: 0.2680481, y: 0.70423365, z: 0.32452258}
+    - name: transform14
+      parentName: L_U_ARM
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_U_LEG
+      parentName: group1
+      position: {x: -0.45761964, y: 2.1301832, z: -0.012260026}
+      rotation: {x: 0.0011926717, y: -0.010969685, z: -0.08572503, w: 0.9962577}
+      scale: {x: 0.54198843, y: 1.2296642, z: 0.69526106}
+    - name: transform12
+      parentName: L_U_LEG
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: NECK
+      parentName: group1
+      position: {x: -0.018242864, y: 4.525883, z: -0.055506233}
+      rotation: {x: 0.042154092, y: -0.005697075, z: -0.011223495, w: 0.99903184}
+      scale: {x: 0.21017961, y: 0.37511227, z: 0.21017961}
+    - name: transform7
+      parentName: NECK
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_BOOB
+      parentName: group1
+      position: {x: 0.16320498, y: 3.9921675, z: 0.29093543}
+      rotation: {x: 0, y: 0.35491195, z: -0, w: 0.93489975}
+      scale: {x: -0.18892898, y: 0.18892898, z: 0.18892898}
+    - name: transform2
+      parentName: R_BOOB
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group2
+      parentName: CharacterTry(Clone)
+      position: {x: 0.7386497, y: 3.810476, z: -0.26948142}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group
+      parentName: group2
+      position: {x: 0.96375465, y: 0.0021839275, z: 0.0011549892}
+      rotation: {x: -0.97568893, y: -0, z: 0.018480517, w: 0.21837963}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group1
+      parentName: pasted__group
+      position: {x: 0.0050823777, y: -3.81266, z: 0.26832643}
+      rotation: {x: 0.75098854, y: 0.22805142, z: 0.4698875, w: 0.403998}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__R_U_ARM
+      parentName: pasted__pasted__group1
+      position: {x: -1.0058076, y: 3.8525195, z: -0.26223853}
+      rotation: {x: -0.30867434, y: 0.94922024, z: 0.044727184, w: -0.041238923}
+      scale: {x: 0.26628774, y: 0.7102559, z: -0.32389808}
+    - name: transform15
+      parentName: pasted__pasted__R_U_ARM
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group3
+      parentName: CharacterTry(Clone)
+      position: {x: 0.32099453, y: 2.9439673, z: -0.2887548}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group1 1
+      parentName: group3
+      position: {x: 0.03149753, y: -2.9439673, z: 0.2887548}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__R_L_ARM
+      parentName: pasted__group1 1
+      position: {x: 0.636926, y: 3.0118573, z: -0.25771508}
+      rotation: {x: -0.13441426, y: 0.78808033, z: 0.12026008, w: 0.5885574}
+      scale: {x: 0.19972154, y: 0.6781094, z: 0.28128985}
+    - name: transform16
+      parentName: pasted__R_L_ARM
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group4
+      parentName: CharacterTry(Clone)
+      position: {x: 0.3655819, y: 2.0421836, z: -0.014094886}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group1 2
+      parentName: group4
+      position: {x: -0.0023861926, y: -2.0421836, z: 0.014094886}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__R_U_LEG
+      parentName: pasted__group1 2
+      position: {x: 0.08452295, y: 2.1301832, z: -0.012260026}
+      rotation: {x: 0.009912963, y: 0.0041090585, z: 0.09178688, w: 0.99572086}
+      scale: {x: -0.54198843, y: 1.2296642, z: 0.69526106}
+    - name: transform18
+      parentName: pasted__R_U_LEG
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group5
+      parentName: CharacterTry(Clone)
+      position: {x: 0.43768206, y: 0.60487145, z: -0.20718649}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group1 3
+      parentName: group5
+      position: {x: -0.026971435, y: -0.60487145, z: 0.20718649}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__R_L_LEG
+      parentName: pasted__group1 3
+      position: {x: 0.35431176, y: 0.6917771, z: -0.20903242}
+      rotation: {x: 0.008474294, y: -0.0028750994, z: 0.12002267, w: 0.9927308}
+      scale: {x: -0.34771842, y: 1.1284862, z: 0.46811283}
+    - name: transform17
+      parentName: pasted__R_L_LEG
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group6
+      parentName: CharacterTry(Clone)
+      position: {x: 0.50102186, y: 4.187788, z: -0.21799551}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pSphere1
+      parentName: group6
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.09041033, y: 0.09041033, z: 0.09041033}
+    - name: transform13
+      parentName: pasted__pSphere1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group7
+      parentName: CharacterTry(Clone)
+      position: {x: -0.96517247, y: 3.3752353, z: -0.28319767}
+      rotation: {x: 0.08583133, y: 0.038114566, z: -0.25504264, w: 0.9623583}
+      scale: {x: 0.61921835, y: 1, z: 1}
+    - name: pasted__pSphere1 1
+      parentName: group7
+      position: {x: -0.006665021, y: 0.027446747, z: 0.0057698935}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.06921261, y: 0.06921261, z: 0.06921261}
+    - name: transform24
+      parentName: pasted__pSphere1 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group8
+      parentName: CharacterTry(Clone)
+      position: {x: 0.9211977, y: 3.3996406, z: -0.2730455}
+      rotation: {x: 0.038900338, y: -0.04584629, z: 0.47452986, w: 0.87818354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group7
+      parentName: group8
+      position: {x: -0.010245085, y: -0.024405062, z: -0.010152165}
+      rotation: {x: 0.08583133, y: 0.038114566, z: -0.25504264, w: 0.9623583}
+      scale: {x: 0.61921835, y: 1, z: 1}
+    - name: pasted__pasted__pSphere1 2
+      parentName: pasted__group7
+      position: {x: -0.024781138, y: 0.0038952827, z: -0.0000065118074}
+      rotation: {x: -0.11221909, y: 0.005188533, z: -0.03027589, w: 0.99320865}
+      scale: {x: 0.06921261, y: 0.06921261, z: 0.06921261}
+    - name: transform19
+      parentName: pasted__pasted__pSphere1 2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group9
+      parentName: CharacterTry(Clone)
+      position: {x: -0.3333552, y: 2.7611718, z: -0.024127051}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.7784057, y: 1.7784057, z: 1.7784057}
+    - name: pasted__pSphere1 2
+      parentName: group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.09041033, y: 0.09041033, z: 0.09041033}
+    - name: transform26
+      parentName: pasted__pSphere1 2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group9_pasted__pSphere1
+      parentName: CharacterTry(Clone)
+      position: {x: -0.030608611, y: 2.5851185, z: -0.0032113492}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group10
+      parentName: CharacterTry(Clone)
+      position: {x: 0.32056355, y: 2.761172, z: -0.024127055}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group9
+      parentName: group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.7784057, y: 1.7784057, z: 1.7784057}
+    - name: pasted__pasted__pSphere1
+      parentName: pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.09041033, y: 0.09041033, z: 0.09041033}
+    - name: transform22
+      parentName: pasted__pasted__pSphere1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group11
+      parentName: CharacterTry(Clone)
+      position: {x: -0.63151956, y: 1.2844133, z: -0.07496418}
+      rotation: {x: -0.026841199, y: 0.03005608, z: -0.116262004, w: 0.9924008}
+      scale: {x: 0.43539742, y: 0.8863812, z: 0.728912}
+    - name: pasted__group9 1
+      parentName: group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.7784057, y: 1.7784057, z: 1.7784057}
+    - name: pasted__pasted__pSphere1 1
+      parentName: pasted__group9 1
+      position: {x: 0.034943134, y: 0.023683071, z: 0.0058660507}
+      rotation: {x: 0.068449736, y: -0.0030163133, z: 0.051070914, w: 0.99634194}
+      scale: {x: 0.07045828, y: 0.11939314, z: 0.11188462}
+    - name: transform23
+      parentName: pasted__pasted__pSphere1 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group12
+      parentName: CharacterTry(Clone)
+      position: {x: 0.60716015, y: 1.3147473, z: -0.11404089}
+      rotation: {x: 0.0006939893, y: -0.04348782, z: 0.19881247, w: 0.979072}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group11
+      parentName: group12
+      position: {x: -0.035332143, y: -0.030333996, z: -0.003884498}
+      rotation: {x: -0.026841199, y: 0.03005608, z: -0.116262004, w: 0.9924008}
+      scale: {x: 0.43539742, y: 0.8863812, z: 0.728912}
+    - name: pasted__pasted__group9
+      parentName: pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.7784057, y: 1.7784057, z: 1.7784057}
+    - name: pasted__pasted__pasted__pSphere1
+      parentName: pasted__pasted__group9
+      position: {x: 0.03306371, y: 0.023318768, z: 0.018380806}
+      rotation: {x: 0.06499169, y: -0.0034217322, z: 0.064380124, w: 0.995801}
+      scale: {x: 0.07045828, y: 0.11939314, z: 0.11188462}
+    - name: transform25
+      parentName: pasted__pasted__pasted__pSphere1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HEAD
+      parentName: CharacterTry(Clone)
+      position: {x: 0.0007658601, y: 4.017834, z: -0.0061122235}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform21
+      parentName: HEAD
+      position: {x: -0.0007658601, y: -4.017834, z: 0.0061122235}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_BOOB
+      parentName: CharacterTry(Clone)
+      position: {x: -0.0067648166, y: 3.6248016, z: -0.0127099035}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform4
+      parentName: L_BOOB
+      position: {x: 0.0067648166, y: -3.6248016, z: 0.0127099035}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left
+      parentName: CharacterTry(Clone)
+      position: {x: 1000.1, y: 3.1964085, z: 0.033295922}
+      rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere1
+      parentName: CharacterTry(Clone)
+      position: {x: -0.49803725, y: 4.187788, z: -0.21799551}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.09041033, y: 0.09041033, z: 0.09041033}
+    - name: transform20
+      parentName: pSphere1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -234,10 +661,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
